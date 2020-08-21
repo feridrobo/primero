@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><i class="fa fa-envelope"></i> ¡Contáctame!</h1>
+      <br />
+      <div class="contactos container">
+        <form id="contacto">
+          <div class="contact">
+            <div class="row">
+              <div class="col-md-6">
+                <span>Nombre: </span>
+              </div>
+              <div class="col-md-6">
+                <input name="name" type="text" placeholder="Nombre" required />
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <span>E-mail </span>
+              </div>
+              <div class="col-md-6">
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="E-mail"
+                  required
+                />
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <span>Teléfono </span>
+              </div>
+              <div class="col-md-6">
+                <input
+                  name="tel"
+                  type="tel"
+                  placeholder="Teléfono"
+                  pattern="^[3]\d{9}$"
+                />
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <span>Fecha de nacimiento</span>
+              </div>
+              <div class="col-md-6">
+                <input
+                  id="fecha"
+                  name="date"
+                  type="date"
+                  required
+                  min="1900-01-01"
+                  max="2015-12-31"
+                  +
+                />
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <span>Comentarios</span>
+              </div>
+              <div class="col-md-6">
+                <textarea
+                  id="comment"
+                  name="comments"
+                  type="text"
+                  placeholder="Comentarios"
+                ></textarea>
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+
+            <div class="boton">
+              <input
+                type="reset"
+                name="borrar"
+                value="BORRAR"
+                class="btn-danger"
+              />
+
+              <input
+                type="submit"
+                name="enviar"
+                value="ENVIAR"
+                class="btn-success"
+              />
+            </div>
+            <br />
+            <br />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
