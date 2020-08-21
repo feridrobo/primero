@@ -1,11 +1,42 @@
-body {
-  font-family: "Sora", sans-serif;
+.header {
+  background-color: #bf860f;
+  color: #d2b4de;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+}
+.menu {
+  /* .menu hereda de .header */
+  height: inherit;
 }
 
-h1 {
-  font-family: "Source Code Pro", monospace, sans-serif;
+.header ol {
+  /* .header ol hereda de .menu */
+  display: flex;
+  height: inherit;
 }
 
+.header ol li {
+  /* .header ol li hereda de .header ol */
+  height: inherit;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 100px; /* <---- solo agregamos esta linea */
+}
+
+.header ol {
+  display: flex;
+}
+
+figure {
+  margin: 0;
+}
 h2,
 h3,
 h4,
@@ -13,30 +44,42 @@ h5,
 h6 {
   font-family: "Sora", sans-serif;
 }
+h1 strong {
+  color: #262521;
+}
+h2 strong {
+  color: #262521;
+}
 h1 {
-
+  font-family: "Source Code Pro", monospace, sans-serif;
   font-size: 40px;
   line-height: 1.4em;
   letter-spacing: -0.2px;
-  margin: 0px 400px 20px 20px;
+  margin: 0%;
+  color: #c7c7c7;
+  /*margin: 30px 400px 20px 20px;*/
 }
 
 body {
-  background: #1054A8;
+  background: #1054a8;
   color: beige;
   margin: 10px;
+  font-family: "Sora", sans-serif;
+  margin: 0%;
 }
-.education-tittle{
-  margin:110px;
+.education-tittle {
+  margin: 110px;
 }
 
 a {
   color: #d0ece7;
   text-decoration: none;
 }
-header {
-  background-color: #BF860F;
-  color: #d2b4de;
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .hero {
@@ -45,76 +88,83 @@ header {
   background-size: 380px 290px;
   background-repeat: no-repeat;
   background-position-x: right;
+  /*display: flex;*/
+  align-items: center;
+  padding: 20px;
 }
 
 .tecnologo {
-  --primary: #2C2C50;
-  
-      --secondary: #635A8D;
-      
-      --tertiary: #BD7D9B;
-   
+  --primary: #2c2c50;
 
+  --secondary: #635a8d;
 
+  --tertiary: #bd7d9b;
 
-      transition: --primary 1s, --secondary 1s, --tertiary 1s;
+  transition: --primary 1s, --secondary 1s, --tertiary 1s;
 
-      background:
-        linear-gradient(var(--primary), transparent),
-        linear-gradient(90deg, var(--secondary), transparent),
-        linear-gradient(-90deg, var(--tertiary), transparent);
+  background: linear-gradient(var(--primary), transparent),
+    linear-gradient(90deg, var(--secondary), transparent),
+    linear-gradient(-90deg, var(--tertiary), transparent);
   margin: 30px;
-  padding:20px;
-  border: 10px solid #2F2F2F;
+  padding: 20px;
+  border: 10px solid #2f2f2f;
   border-radius: 10px;
-  
 }
 .carrera {
-  --primary: #2C2C50;
-  
-      --secondary: #635A8D;
-      
-      --tertiary: #BD7D9B;
-   
+  --primary: #2c2c50;
 
+  --secondary: #635a8d;
 
+  --tertiary: #bd7d9b;
 
-      transition: --primary 1s, --secondary 1s, --tertiary 1s;
+  transition: --primary 1s, --secondary 1s, --tertiary 1s;
 
-      background:
-        linear-gradient(var(--primary), transparent),
-        linear-gradient(90deg, var(--secondary), transparent),
-        linear-gradient(-90deg, var(--tertiary), transparent);
-   
+  background: linear-gradient(var(--primary), transparent),
+    linear-gradient(90deg, var(--secondary), transparent),
+    linear-gradient(-90deg, var(--tertiary), transparent);
+  align-items: center;
+  justify-content: space-between;
   margin: 30px;
   padding: 20px;
-  border: 10px solid #2F2F2F;
-  border-radius:10px;
+  border: 10px solid #2f2f2f;
+  border-radius: 10px;
 }
 .noFormal {
-  --primary: #2C2C50;
-  
-      --secondary: #635A8D;
-      
-      --tertiary: #BD7D9B;
-   
+  --primary: #2c2c50;
 
+  --secondary: #635a8d;
 
+  --tertiary: #bd7d9b;
 
-      transition: --primary 1s, --secondary 1s, --tertiary 1s;
+  transition: --primary 1s, --secondary 1s, --tertiary 1s;
 
-      background:
-        linear-gradient(var(--primary), transparent),
-        linear-gradient(90deg, var(--secondary), transparent),
-        linear-gradient(-90deg, var(--tertiary), transparent);
+  background: linear-gradient(var(--primary), transparent),
+    linear-gradient(90deg, var(--secondary), transparent),
+    linear-gradient(-90deg, var(--tertiary), transparent);
   margin: 30px;
   padding: 20px;
-  border: 10px solid #2F2F2F;
-  border-radius:10px;
+  border: 10px solid #2f2f2f;
+  border-radius: 10px;
 }
-.contact{
-   margin-left:30px;
-   margin-top:60px;
-   margin-bottom:30px
+.contact {
+  margin-left: 30px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.footer {
+  display: flex;
+  margin: 10px;
+}
 
+.education-tittle {
+  font-size: 30px;
+}
+.carrera-name {
+  font-size: 30px;
+}
+.tecnologo-name {
+  font-size: 30px;
+}
+.noFormal-name {
+  font-size: 30px;
 }
