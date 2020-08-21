@@ -14,15 +14,20 @@ h6 {
   font-family: "Sora", sans-serif;
 }
 h1 {
+
   font-size: 40px;
   line-height: 1.4em;
   letter-spacing: -0.2px;
-  margin: 0px 400px 20px 0px;
+  margin: 0px 400px 20px 20px;
 }
 
 body {
-  background-color: #8184e5;
+  background: #1054A8;
   color: beige;
+  margin: 10px;
+}
+.education-tittle{
+  margin:110px;
 }
 
 a {
@@ -30,7 +35,7 @@ a {
   text-decoration: none;
 }
 header {
-  background-color: #366468;
+  background-color: #BF860F;
   color: #d2b4de;
 }
 
@@ -43,11 +48,73 @@ header {
 }
 
 .tecnologo {
-  border: 10px solid olive;
+  --primary: #2C2C50;
+  
+      --secondary: #635A8D;
+      
+      --tertiary: #BD7D9B;
+   
+
+
+
+      transition: --primary 1s, --secondary 1s, --tertiary 1s;
+
+      background:
+        linear-gradient(var(--primary), transparent),
+        linear-gradient(90deg, var(--secondary), transparent),
+        linear-gradient(-90deg, var(--tertiary), transparent);
+  margin: 30px;
+  padding:20px;
+  border: 10px solid #2F2F2F;
+  border-radius: 10px;
+  
 }
 .carrera {
-  border: 10px solid olive;
+  --primary: #2C2C50;
+  
+      --secondary: #635A8D;
+      
+      --tertiary: #BD7D9B;
+   
+
+
+
+      transition: --primary 1s, --secondary 1s, --tertiary 1s;
+
+      background:
+        linear-gradient(var(--primary), transparent),
+        linear-gradient(90deg, var(--secondary), transparent),
+        linear-gradient(-90deg, var(--tertiary), transparent);
+   
+  margin: 30px;
+  padding: 20px;
+  border: 10px solid #2F2F2F;
+  border-radius:10px;
 }
 .noFormal {
-  border: 10px solid olive;
+  --primary: #2C2C50;
+  
+      --secondary: #635A8D;
+      
+      --tertiary: #BD7D9B;
+   
+
+
+
+      transition: --primary 1s, --secondary 1s, --tertiary 1s;
+
+      background:
+        linear-gradient(var(--primary), transparent),
+        linear-gradient(90deg, var(--secondary), transparent),
+        linear-gradient(-90deg, var(--tertiary), transparent);
+  margin: 30px;
+  padding: 20px;
+  border: 10px solid #2F2F2F;
+  border-radius:10px;
+}
+.contact{
+   margin-left:30px;
+   margin-top:60px;
+   margin-bottom:30px
+
 }
