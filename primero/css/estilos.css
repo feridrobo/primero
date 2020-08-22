@@ -30,10 +30,6 @@
   padding: 0 100px; /* <---- solo agregamos esta linea */
 }
 
-.header ol {
-  display: flex;
-}
-
 figure {
   margin: 0;
 }
@@ -154,6 +150,7 @@ ul {
 .footer {
   display: flex;
   margin: 10px;
+  justify-content: space-between;
 }
 
 .education-tittle {
